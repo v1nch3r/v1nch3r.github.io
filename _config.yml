@@ -66,6 +66,9 @@ analytics:
   google:
     tracking_id: your-google-tracking-id
 
+### Google Translate ###
+translate:
+  enabled: true
 
 ### Defaults for collections ###
 defaults:
