@@ -25,40 +25,35 @@ cd /opt/wordpress/
 Buat file docker-compose.yml dengan isi berikut:
 
 ```yml
-version: '3.8'
-
 services:
-  db:
-    image: mysql:5.7
-    container_name: wordpress_db
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: wordpress
-      MYSQL_USER: wordpressuser
-      MYSQL_PASSWORD: wordpresspassword
-    volumes:
-      - db_data:/var/lib/mysql
 
   wordpress:
-    image: wordpress:latest
-    container_name: wordpress_app
+    image: wordpress
     restart: always
-    depends_on:
-      - db
     ports:
-      - "8080:80"
+      - 8080:80
     environment:
-      WORDPRESS_DB_HOST: db:3306
-      WORDPRESS_DB_NAME: wordpress
-      WORDPRESS_DB_USER: wordpressuser
-      WORDPRESS_DB_PASSWORD: wordpresspassword
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: exampleuser
+      WORDPRESS_DB_PASSWORD: examplepass
+      WORDPRESS_DB_NAME: exampledb
     volumes:
-      - wp_data:/var/www/html
+      - wordpress:/var/www/html
+
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: exampledb
+      MYSQL_USER: exampleuser
+      MYSQL_PASSWORD: examplepass
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - db:/var/lib/mysql
 
 volumes:
-  db_data:
-  wp_data:
+  wordpress:
+  db:
 ```
 
 ## Jalankan WordPress
