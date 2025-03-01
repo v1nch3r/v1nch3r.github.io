@@ -71,10 +71,13 @@
         <a class="nav-item nav-link {{ active_status }}" href="{{ url }}" {%- if html_page.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>{{ html_page.title }}</a>
 
       {% endfor %}
+      
+      <a href="https://repo.vincher.us.kg" class="nav-item nav-link" target="_blank">Repository</a>
 
       <!-- start google translate button-->
       <div id="google_translate_element" class="nav-item nav-link"></div>
       <!-- end of google translate button-->
+      
 
       <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
     </div>
