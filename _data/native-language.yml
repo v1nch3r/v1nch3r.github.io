@@ -1,0 +1,11 @@
+- name: Indonesian Languange
+  percentage: 90
+  color: danger
+
+- name: Japanese Languange
+  percentage: 70
+  color: secondary
+
+- name: English Language
+  percentage: 50
+  color: secondary
