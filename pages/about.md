@@ -6,7 +6,7 @@ weight: 3
 ---
 
 <p align="center">
-<img src="{{ site.author.image }}" alt="{{ site.title }}" width="250px" height="250px">
+<img src="{{ site.author.image }}" alt="{{ site.title }}" width="250px" height="250px"/>
 <br>
 
 Hi I am <b>{{ site.author.name }}</b> :wave:,<br>
