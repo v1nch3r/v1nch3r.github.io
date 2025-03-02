@@ -6,9 +6,7 @@ weight: 3
 ---
 
 <p align="center">
-  <a href="{{ site.baseurl }}">
-    <img src="{{ site.author.image_about }}" alt="{{ site.title }}" style="display:flex;">
-  </a>
+<img src="{{ site.author.image }}" alt="{{ site.title }}" class="circle-image wow animated zoomIn" data-wow-delay=".1s">
 <br>
 
 Hi I am <b>{{ site.author.name }}</b> :wave:,<br>
