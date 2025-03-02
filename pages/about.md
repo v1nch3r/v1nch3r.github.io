@@ -13,6 +13,7 @@ weight: 3
 
 Hi I am **{{ site.author.name }}** :wave:,<br>
 I learn about different languages in the world. Currently, I have a hobby and work as an <b>IT Networking, Linux Server Administrator, and Electrical Technician.</b>
+</p>
 
 ## **My Skills**
 <div class="row">
