@@ -6,6 +6,16 @@ color: primary
 description: Instalasi WordPress di Docker pada Debian menggunakan Docker Compose untuk menjalankan WordPress dan MySQL dalam container terisolasi.
 ---
 
+<br>
+{% capture list_items %}
+Install Docker & Docker Compose
+Buat Direktori untuk WordPress
+Buat File docker-compose.yml
+Jalankan WordPress
+Akses WordPress
+{% endcapture %}
+{% include elements/list.html title="Page Index / Daftar Isi" type="toc" %}
+
 ## Install Docker & Docker Compose
 Jalankan perintah berikut untuk menginstal Docker dan Docker Compose:
 
