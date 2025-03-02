@@ -6,6 +6,11 @@ color: info
 description: Bash is the Unix command-line interface (CLI). Also called the terminal, the command line, or the shell. It's a command language that allows us to work with files on our computers in a way that's far more efficient and powerful than using a GUI (graphical user interface).
 ---
 
+<p align="left">
+ <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=blue" height=21 width=80>
+ <img src="https://badges.frapsoft.com/bash/v1/bash.png?v=103)](https://github.com/ellerbrock/open-source-badges">
+ <img src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white" height=22 width=110>
+
 # Ultimate List of Linux bash commands
 
 _Bash is the [Unix](https://www.google.com/search?q=What+is+UNIX+explain%3F&client=firefox-b-d&sxsrf=ALiCzsZmYtgn9ctD5vHAqgVFkM5tZ514pw%3A1667926333803&ei=PYlqY6XIMNmNwbkPqeK3qAo&ved=0ahUKEwjl2ozlhZ_7AhXZRjABHSnxDaUQ4dUDCA4&uact=5&oq=What+is+UNIX+explain%3F&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIFCAAQhgMyBQgAEIYDMgUIABCGAzIFCAAQhgM6CggAEEcQ1gQQsAM6BwgAELADEENKBAhNGAFKBAhBGABKBAhGGABQnAFYnAFgvwNoAXABeACAAa0BiAGtAZIBAzAuMZgBAKABAqABAcgBCsABAQ&sclient=gws-wiz-serp) command-line interface (CLI). Also called the terminal, the command line, or the shell. It's a command language that allows us to work with files on our computers in a way that's far more efficient and powerful than using a GUI (graphical user interface)._
@@ -4494,3 +4499,99 @@ Inspired by <a href="https://github.com/RehanSaeed/Bash-Cheat-Sheet">RehanSaeed/
 
 </p>
  </details>
+
+---
+
+<details><summary><b>Cheat Sheet for quick references of commands and codes</b> <img src="https://user-images.githubusercontent.com/18756975/201534292-3b617041-77a8-4e2f-8683-641d0b8d7f57.PNG" width=15px height=20px></summary>
+
+[cheat.sh](https://github.com/chubin/cheat.sh)<br>
+![image](https://user-images.githubusercontent.com/18756975/200065767-13a6249f-2188-4206-8073-1714be57c408.png)<br>
+<div align="center"> 
+<details><summary><b>Cheat sheets sources</b></summary>
+<p>
+
+|Cheat sheets           |Repository                                                                          |C/U*                                                                                                                  |Stars                                                                                                   |Creation Date|
+|-----------------------|------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|-------------|
+|UNIX/Linux, programming|[cheat.sheets](https://github.com/chubin/cheat.sheets)                              |![](https://img.shields.io/github/contributors-anon/chubin/cheat.sheets?label=%F0%9F%91%A5&labelColor=white)           |![](https://img.shields.io/github/stars/chubin/cheat.sheets?label=%E2%AD%90&labelColor=white)           |May 1, 2017  |
+|UNIX/Linux commands    |[tldr-pages/tldr](https://github.com/tldr-pages/tldr)                               |![](https://img.shields.io/github/contributors-anon/tldr-pages/tldr?label=%F0%9F%91%A5&labelColor=white)                           |![](https://img.shields.io/github/stars/tldr-pages/tldr?label=%E2%AD%90&labelColor=white)               |Dec 8, 2013  |
+|UNIX/Linux commands    |[chrisallenlane/cheat](https://github.com/chrisallenlane/cheat)                     |![](https://img.shields.io/github/contributors-anon/chrisallenlane/cheat?label=%F0%9F%91%A5&labelColor=white)          |![](https://img.shields.io/github/stars/chrisallenlane/cheat?label=%E2%AD%90&labelColor=white)          |Jul 28, 2013 |
+|Programming languages  |[adambard/learnxinyminutes-docs](https://github.com/adambard/learnxinyminutes-docs) |![](https://img.shields.io/github/contributors-anon/adambard/learnxinyminutes-docs?label=%F0%9F%91%A5&labelColor=white)|![](https://img.shields.io/github/stars/adambard/learnxinyminutes-docs?label=%E2%AD%90&labelColor=white)|Jun 23, 2013 |
+|Go                     |[a8m/go-lang-cheat-sheet](https://github.com/a8m/go-lang-cheat-sheet)               |![](https://img.shields.io/github/contributors-anon/a8m/go-lang-cheat-sheet?label=%F0%9F%91%A5&labelColor=white)       |![](https://img.shields.io/github/stars/a8m/go-lang-cheat-sheet?label=%E2%AD%90&labelColor=white)       |Feb 9, 2014  |
+|Perl                   |[pkrumnis/perl1line.txt](https://github.com/pkrumins/perl1line.txt)                 |![](https://img.shields.io/github/contributors-anon/pkrumins/perl1line.txt?label=%F0%9F%91%A5&labelColor=white)        |![](https://img.shields.io/github/stars/pkrumins/perl1line.txt?label=%E2%AD%90&labelColor=white)        |Nov 4, 2011  |
+|Programming languages  |[StackOverflow](https://stackoverflow.com)                                          |[14M](https://stackexchange.com/leagues/1/alltime/stackoverflow)|N/A  
+
+
+</p>
+ </details>
+ </div> 
+ 
+### Usage (Online)
+_**Terminal**_ :
+```bash
+curl cht.sh/keyword
+# or
+curl cheat.sh/keyword
+```
+_**Browser**_ :
+
+>   [https://cht.sh/](https://cht.sh/)keyword<br>
+>   or<br>
+>   [https://cheat.sh/](https://cheat.sh/)keyword
+
+#
+
+ ### Offline usage <a href="https://github.com/chubin/cheat.sh#installation">install</a> cheat script manually<br>
+_**Install globally(all users)**_ :
+```bash
+curl -s https://cht.sh/:cht.sh | sudo tee /usr/local/bin/cht.sh && sudo chmod +x /usr/local/bin/cht.sh
+```
+_**Run**_ :
+```bash
+cht.sh keyword
+```
+>**Note** - More info on usage :
+
+>   https://cht.sh/:help
+
+</p>
+ </details>
+
+---
+
+<details><summary><b>More bash resources</b> <img src="https://user-images.githubusercontent.com/18756975/203332636-6012a214-21d9-423a-b20e-09beed4d9a25.png" width=15px height=20px></summary>
+
+| **Repository** | **Description** |
+| :--: | :-- | 
+| **Bash/Shell Scripting Tutorials and Guides** |
+| [introduction-to-bash-scripting](https://github.com/bobbyiliev/introduction-to-bash-scripting) | Free Introduction to Bash Scripting eBook. |
+| [shell-scripting-tutorial](https://github.com/techarkit/shell-scripting-tutorial) | A complete beginner's guide to learning shell scripting from scratch, with videos, practice scenarios, and project ideas. |
+| [100-shell-script-examples](https://github.com/epety/100-shell-script-examples) | A collection of shell scripts found on the internet. |
+| [simple-bash-scripts](https://github.com/ruanyf/simple-bash-scripts) | A collection of simple Bash scripts. |
+| [shell-examples](https://github.com/qjcg/shell-examples) | Little Bash shell scripting examples. |
+| [Shell Cheat Sheet](https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/shell.sh) | A detailed and organized shell scripting cheat sheet for quick reference. |
+| [bash-utils](https://github.com/pirate/bash-utils) | A collection of hand-crafted bash scripts for various common tasks. |
+| [Bash-Snippets](https://github.com/alexanderepstein/Bash-Snippets) | A collection of small bash scripts for heavy terminal users. |
+| [DevOps Bash Tools](https://github.com/HariSekhon/DevOps-Bash-tools) | A comprehensive collection of 1000+ DevOps bash scripts for AWS, GCP, Kubernetes, Docker, CI/CD, databases, and more. |
+| [Bash Booster](https://github.com/bahamas10/bash-booster) | A modular bash framework that simplifies the process of writing bash scripts. |
+| [pure-bash-bible](https://github.com/dylanaraps/pure-bash-bible) | A collection of pure bash snippets for common tasks like string manipulation, file handling, etc., with no external dependencies. |
+| **Curated Lists of Bash/Shell Resources** |
+| [awesome-bash](https://github.com/awesome-lists/awesome-bash) | A curated list of delightful Bash scripts and resources. |
+| [awesome-shell](https://github.com/uhub/awesome-shell) | A curated list of awesome Shell frameworks, libraries, and software. |
+| [awesome-shell](https://github.com/alebcay/awesome-shell) | A list of awesome shell tools and resources, including libraries and scripts for enhancing the command-line experience. |
+| [awesome-cli-apps](https://github.com/agarrharr/awesome-cli-apps) | A curated list of command line apps. |
+| [cli-apps](https://github.com/toolleeo/cli-apps) | A curated list of (mainly) CLI/TUI applications with source data organized into CSV files. |
+| [awesome-cli](https://github.com/Kikobeats/awesome-cli) | A curated list of awesome resources for building immersive CLI experiences. |
+| [awesome-cli](https://github.com/umutphp/awesome-cli) | A simple command line tool to give you a fancy command line interface to dive into Awesome lists. |
+| **AI-Enhanced Command Line Tools** |
+| [shell_gpt](https://github.com/TheR1D/shell_gpt) | A command-line productivity tool powered by AI large language models like GPT-4. |
+| [aider](https://github.com/paul-gauthier/aider) | AI pair programming in your terminal. |
+| [warp](https://github.com/warpdotdev/Warp) | Warp is a modern, Rust-based terminal with AI built in so you and your team can build great software, faster. |
+| [plandex](https://github.com/plandex-ai/plandex) | AI driven development in your terminal. Designed for large, real-world tasks. |
+| **Other Fun and Useful Shell Tools** |
+| [awesome-ttygames](https://github.com/ligurio/awesome-ttygames) | Unix ASCII games. |
+| [terminals-are-sexy](https://github.com/k4m4/terminals-are-sexy) | A curated list of Terminal frameworks, plugins, and resources for CLI lovers. |
+
+</p>
+ </details>
+ 
+---
