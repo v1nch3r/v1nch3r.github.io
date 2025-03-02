@@ -9,3 +9,15 @@
 - name: English Language
   percentage: 50
   color: secondary
+  
+- name: Arabic Language
+  percentage: 15
+  color: secondary
+  
+- name: German Language
+  percentage: 12
+  color: secondary
+  
+- name: Russian Language
+  percentage: 5
+  color: secondary
