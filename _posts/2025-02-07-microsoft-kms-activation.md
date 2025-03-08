@@ -1,6 +1,6 @@
 ---
 title: Microsoft KMS Activation
-tags: [Linux]
+tags: [Windows]
 style: fill
 color: secondary
 description: VLMCSd is an open-source KMS (Key Management Service) server used to activate Microsoft products, such as Windows and Office, locally without connecting to Microsoft's official KMS servers. It mimics the functionality of a KMS server to activate software.
