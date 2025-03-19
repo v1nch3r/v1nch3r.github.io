@@ -19,21 +19,21 @@ Enable OpenClash
 ## Install Dependencies
 `iptables`
 
-``shell
+```shell
 opkg update
 opkg install bash iptables dnsmasq-full curl ca-bundle ipset ip-full iptables-mod-tproxy iptables-mod-extra ruby ruby-yaml kmod-tun kmod-inet-diag unzip luci-compat luci luci-base
-``
+```
 
 `nftables`
 
-``shell
+```shell
 opkg update
 opkg install bash dnsmasq-full curl ca-bundle ip-full ruby ruby-yaml kmod-tun kmod-inet-diag unzip kmod-nft-tproxy luci-compat luci luci-base
-``
+```
 
 ## Download and Install OpenClash
 
-``shell
+```shell
 wget https://github.com/vernesong/OpenClash/releases/download/v0.46.079/luci-app-openclash_0.46.079_all.ipk
 opkg install luci-app-openclash_0.46.079_all.ipk
 ```
