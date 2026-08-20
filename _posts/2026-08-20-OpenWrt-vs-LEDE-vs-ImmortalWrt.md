@@ -9,19 +9,35 @@ description: "Memahami perbedaan antara OpenWrt Official, LEDE (coolsnowwolf), d
 <br>
 
 <!-- Language Selector -->
-<div class="text-center" markdown="0">
-  <a href="#id" class="btn btn-outline-primary btn-sm">🇮🇩 Indonesia</a>
-  <a href="#en" class="btn btn-outline-primary btn-sm">🇬🇧 English</a>
-  <a href="#zh" class="btn btn-outline-primary btn-sm">🇨🇳 中文</a>
-  <a href="#ja" class="btn btn-outline-primary btn-sm">🇯🇵 日本語</a>
+<div class="text-center" style="margin-bottom: 20px;">
+  <button onclick="switchLang('id')" class="lang-btn" id="btn-id">🇮🇩 Indonesia</button>
+  <button onclick="switchLang('en')" class="lang-btn" id="btn-en">🇬🇧 English</button>
+  <button onclick="switchLang('zh')" class="lang-btn" id="btn-zh">🇨🇳 中文</button>
+  <button onclick="switchLang('ja')" class="lang-btn" id="btn-ja">🇯🇵 日本語</button>
 </div>
 
----
+<style>
+.lang-btn {
+  padding: 6px 14px;
+  margin: 4px;
+  border: 1px solid #007bff;
+  border-radius: 20px;
+  background: transparent;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+.lang-btn:hover { background: #007bff; color: white; }
+.lang-btn.active { background: #007bff; color: white; }
+.lang-section { display: none; }
+.lang-section.active { display: block; }
+</style>
 
 <!-- ==================== INDONESIA ==================== -->
-<a name="id"></a>
+<div class="lang-section" id="lang-id">
 
-## 🇮🇩 Pendahuluan
+## Pendahuluan
 
 Jika kamu pernah berkecimpung di dunia networking atau pernah memodifikasi router, pasti kamu pernah mendengar tentang **OpenWrt**. Tapi tahukah kamu bahwa ada beberapa "varian" OpenWrt yang beredar di luar sana? Yap, ada **LEDE** dan **ImmortalWrt**. Masing-masing punya kelebihan dan kekurangan tersendiri. Mari kita bahas satu per satu.
 
@@ -150,12 +166,12 @@ Jika kamu masih bingung, mulailah dengan **OpenWrt Official**. Kalau ternyata ka
 
 > **Tip:** Kamu bisa memulai dengan OpenWrt official, lalu menginstal paket tambahan dari repositori LEDE secara manual menggunakan `opkg` tanpa harus mengganti seluruh firmware.
 
----
+</div>
 
 <!-- ==================== ENGLISH ==================== -->
-<a name="en"></a>
+<div class="lang-section" id="lang-en">
 
-## 🇬🇧 Introduction
+## Introduction
 
 If you've ever dabbled in networking or modified a router, you've probably heard of **OpenWrt**. But did you know there are several "variants" of OpenWrt out there? Yep, there's **LEDE** and **ImmortalWrt**. Each has its own strengths and weaknesses. Let's break them down one by one.
 
@@ -284,12 +300,12 @@ If you're still unsure, start with **OpenWrt Official**. If you find you need pr
 
 > **Tip:** You can start with OpenWrt official, then install additional packages from LEDE repositories manually using `opkg` without replacing the entire firmware.
 
----
+</div>
 
 <!-- ==================== CHINESE ==================== -->
-<a name="zh"></a>
+<div class="lang-section" id="lang-zh">
 
-## 🇨🇳 引言
+## 引言
 
 如果你曾经涉足网络领域或修改过路由器，你一定听说过 **OpenWrt**。但你知道市面上有几种 OpenWrt 的"变体"吗？没错，有 **LEDE** 和 **ImmortalWrt**。每种都有各自的优缺点。让我们逐一分析。
 
@@ -418,12 +434,12 @@ ImmortalWrt 是从 LEDE 分叉的，维护在 [github.com/immortalwrt](https://g
 
 > **提示：** 你可以从 OpenWrt 官方版开始，然后使用 `opkg` 手动从 LEDE 仓库安装额外的包，而无需更换整个固件。
 
----
+</div>
 
 <!-- ==================== JAPANESE ==================== -->
-<a name="ja"></a>
+<div class="lang-section" id="lang-ja">
 
-## 🇯🇵 はじめに
+## はじめに
 
 ネットワークの世界にかかわったり、ルーターを改造したことがあるなら、**OpenWrt** という名前を聞いたことがあるでしょう。でも、OpenWrtにはいくつかの「バリアント」があるのを知っていましたか？そう、**LEDE** と **ImmortalWrt** です。それぞれに独自の長所と短所があります。一つずつ解説していきましょう。
 
@@ -551,3 +567,26 @@ ImmortalWrtはLEDEからフォークしたもので、[github.com/immortalwrt](h
 まだ迷っている場合は、**OpenWrt Official** から始めましょう。プロキシ/VPNツールが必要になったら、LEDEまたはImmortalWrtを検討してください。
 
 > **ヒント：** OpenWrt公式版から始めて、`opkg` を使ってLEDEリポジトリから追加パッケージを手動でインストールすることもできます。ファームウェア全体を交換する必要はありません。
+
+</div>
+
+<!-- Language Switch Script -->
+<script>
+function switchLang(lang) {
+  // Hide all sections
+  document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+  // Deactivate all buttons
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  // Show selected section
+  document.getElementById('lang-' + lang).classList.add('active');
+  document.getElementById('btn-' + lang).classList.add('active');
+  // Save preference
+  localStorage.setItem('blog-lang', lang);
+}
+
+// Load saved language or default to Indonesian
+document.addEventListener('DOMContentLoaded', function() {
+  var saved = localStorage.getItem('blog-lang') || 'id';
+  switchLang(saved);
+});
+</script>
